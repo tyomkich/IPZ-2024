@@ -211,18 +211,6 @@ void game() {
             log("Game ended in a draw.");
         }
 
-        std::cout << "Player 1 wins: " << player1_wins << "\n";
-        std::cout << "Player 2 wins: " << player2_wins << "\n";
-
-        std::cout << "Do you want to play again? (y/n): ";
-        char playAgainChoice;
-        std::cin >> playAgainChoice;
-        if (playAgainChoice != 'y') {
-            play_again = false;
-        } else {
-            resetBoard();
-            move_count = 0;
-        }
     }
 
     logFile.close();
